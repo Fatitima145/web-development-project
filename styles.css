@@ -1,0 +1,171 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+/* styling all the body paragraphs */
+body { 
+       font-family: 'georgia', times, serif;
+       line-height: 2;
+       background-color: #eae7dc; /*this is the color of the page*/
+       color: #ed5a4f;    /*color of the words*/
+       padding: 20px;}
+
+/* styling the header. the header is on every page and says the name of the website */
+.header {
+    background-color: #ed5a4f;
+    color: #eae7dc;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 20px;
+    border-radius: 20px;  /* the corners will be rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* gives a slight shadow to the box surrounding the header*/
+    border: 2px solid #faf7f7;  /* a white border surrounding the header */
+    max-width: 1100px;
+    margin: 0 auto;  /* makes sure the header is in the center */}
+
+/* styling the navigation bar */
+.navbar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4fdde8;
+    padding: 10px;
+    border-radius: 10px;}
+
+/* styling what the navigation boxes usually looks like */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;}
+
+/* what the navigation looks like when you hover on it */
+.navbar a:hover {
+    background-color: #e85a4f;
+    color: #eae7dc;}
+
+/* only the home and about buttons should be on the right while the contact is far right */
+.navbar .right {
+    margin-left: auto;}
+
+/* styling the main sections for all pages */
+.main {
+    margin-top: 5px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);}
+
+/* styles all the h2 headers in the main section */
+.main h2 {
+    margin-bottom: 10px;
+    color: #333;}
+
+/* styles all the h3 headers in the main section */
+.main h3 {
+    color: #333;}
+
+/* styles all the h4 headers in the main section */
+.main h4 {
+    margin-top: 10px;
+    color: #333;}
+
+/* styles all the box text boxes */
+.main .boxtext-facts {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-style: normal;
+    border-left: 7px solid #333;
+    border-right: 7px solid #333;}
+
+/* styles all the paragraphs*/
+p {
+    margin-top: 2px;
+    margin-bottom: 40px;
+    line-height: 1.8;}
+
+/* for layout purposes */
+.row {
+    display: flex;
+    flex-wrap: wrap;}
+
+/* makes sure the image stays on the side */
+.side {
+    flex: 1; 
+    margin-right: 20px;}
+
+/* styling my image */
+.my-img {
+    max-width: 20%;       /* for how big I want the picture to be */
+    height: auto;         
+    border-radius: 8px;   
+    margin-right: 20px;}
+
+/* styling the footer */
+.footer {
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px;
+    background-color: #4fdde8;
+    color: white;
+    border-radius: 10px;}
+
+/* styling the form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 0 auto;}
+
+/* styling the labels */
+label {
+    margin-bottom: 10px;}
+
+/* styling the input and textareas */
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;}
+
+/* for the contacts page. i wanted h2 to be centered */
+.h2-contacts {
+text-align: center;}
+
+/* styling the send button for the form */
+button {
+    padding: 11px;
+    background: #333;
+    color: #f0f0f0;
+    border: none;
+    cursor: pointer;}
+
+/* what the send button looks like when you hover over it */
+button:hover {
+    background-color: #e85a4f;
+    color: #eae7dc;}
+
+/* adjusts the website based on how big your screen is */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;}
+
+    .navbar a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;}
+
+    .main {
+        padding: 15px;}
+
+    .footer {
+        padding: 5px;}
+
+    .header {
+        padding: 20px;}
+
+}

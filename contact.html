@@ -1,0 +1,51 @@
+<!--basic html stuff-->
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link rel="stylesheet" href="styles.css"> <!--linking style sheet-->
+<title>Fatima's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+ <h1 class="header">Fatima Ahmed's Portfolio</h1>
+
+<div class="navbar">
+
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class= "right">Contact</a>
+
+</div> <!--everything above this is the same for every page-->
+
+<main>
+<div class= "main">
+
+<div class="h2-contacts"> <!--made this a class because it's the only h2 header I wanted in the center-->
+<h2>If you need to contact me, you can fill out the following:</h2>
+
+<form id="contactForms"> <!--this makes a form you can fill out-->
+ <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required> <!--the name should be text-->
+ <label for="email">Your E-mail:</label>
+            <input type="email" id="email" name="email" required> <!--all the fields are required-->
+ <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea> <!--textarea is a bigger area-->
+ <button type="submit">Send</button> <!--adds a button so you can submit the form-->
+</form> <!--ends the form-->
+
+</main> <!--ends the main-->
+
+<div class="footer"> <!--everything below is the same for every page-->
+  <h4>Made By Fatima Ahmed</h4>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
+
+
+
