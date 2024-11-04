@@ -19,7 +19,7 @@ app.post('/submit-form', (req, res) => {
     const { name, email, message } = req.body;
 
     // what i see in VS Code terminal when data is submitted in the local server
-    console.log('Data recieved from server:');
+    console.log('Data received from server:');
     console.log(`Name: ${name}`);
     console.log(`Email: ${email}`);
     console.log(`Message: ${message}`);
