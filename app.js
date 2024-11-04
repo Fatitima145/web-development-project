@@ -1,14 +1,13 @@
 const express = require('express');
 const path = require('path');
-const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = 3000;
 
 // Middleware
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Route for serving the contact.html file
 app.get('/contact', (req, res) => {
