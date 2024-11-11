@@ -148,6 +148,14 @@ button:hover {
     background-color: #e85a4f;
     color: #eae7dc;}
 
+/* styles the items in the bucket list page */
+.item {
+    background-color: white;
+    padding: 1.5rem;  /* this section surrounds the items with a subtle box with shadows */
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+
 /* adjusts the website based on how big your screen is */
 @media (max-width: 768px) {
     .navbar {
